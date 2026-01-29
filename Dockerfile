@@ -5,7 +5,7 @@ FROM eooce/webssh:latest
 RUN rm -f /app/webssh/static/background.png
 
 # 复制自定义 CSS 文件（可选）
-COPY custom.css /app/webssh/static/custom.css
+COPY custom.css /app/webssh/static/webssh.css
 
 # 设置默认命令
 CMD ["python", "webssh.py"]
